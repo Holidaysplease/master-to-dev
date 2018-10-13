@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Master to Dev Options</title>
+
+    <style type="text/css">
+        #message {
+            display: none;
+        }
+
+        #message.success {
+            border-radius: 5px;
+            border: 1px solid #ffeeba;
+            background: #fff3cd;
+            color: #856404;
+            display: block;
+            padding: 10px;
+        }
+
+        .container {
+			padding: 10px 5px;
+        }
+
+        .form-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="message"></div>
+
+<div class="container">
+    <div class="form-item">Dev extension: <input type="text" id="dev-extension"></div>
+    <button id="save">Save</button>
+</div>
+
+<script src="options.js"></script>
+</body>
+</html>
