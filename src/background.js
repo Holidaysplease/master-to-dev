@@ -49,7 +49,10 @@ var iconClick = function(activeTab) {
         newUrl = baseUrl + '.' + devExtension + '/' + urlArray.join('/');
     }
 
-    chrome.tabs.create({url: protocol + '//' + newUrl});
+    chrome.tabs.create({
+        index: activeTab.index + 1,
+        url: protocol + '//' + newUrl
+    });
 };
 
 /**
